@@ -22,7 +22,7 @@ import { rootRouterConfig } from './app.routes';
   imports: [
     BrowserModule,
     FormsModule,
-    [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
+    [RouterModule.forRoot(rootRouterConfig, { useHash: false, relativeLinkResolution: 'legacy' })]
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'}
